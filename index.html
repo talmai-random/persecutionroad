@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+	<title>Persecution Road</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="includes/desktop.css" />
+	<link rel="stylesheet" href="includes/mobile.css" />
+	<link rel="stylesheet" href="includes/mobile_landscape.css" />
+	<link rel="stylesheet" href="includes/colorbox.css" />
+	<link rel="stylesheet" href="includes/Icon.Label.css" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="includes/backButtonDetect.js"></script>
+	<script src="includes/bounceMarker.js"></script>
+	<script src="includes/animatedMarker.js"></script>
+	<script src="includes/persecution.js"></script>
+	<script src="includes/raphael-min.js"></script>
+	<script src="includes/raphael_linechart.js"></script>
+	<script src="includes/g.raphael-min.js"></script>
+	<script src="includes/g.bar-min.js"></script>
+	<script src="includes/jquery.colorbox-min.js"></script>
+	<script src="includes/Icon.Label.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div id="logo"></div>
+		<div id="site_description"></div>
+		<a href="#" class="detailedViewBackButton">&lt;&lt;&lt;&nbsp;click here to go back to full map</a>
+		<div id="site_display_alert">For the complete experience, use a higher resolution!</div>
+		<!--
+		<div id="next"></div>
+		<div id="day"></div>
+		<div id="prev"></div>
+		//-->
+	</div>
+	<div id="prev_bar"></div>
+	<div id="prev_pray"></div>
+	<div id="map"></div>
+	<div id="simple_content"></div>
+	<div id="content">
+		<div style="border-bottom: 1pt solid black; height: 29px; position: fixed; right: 0px; top: 0px; width: 100%;"></div>
+		<div id="content_image"></div>
+		<div id="content_text">
+			<div id="content_description">
+				<img src="images/name_title.png">
+				<span style="margin-left: 10px; font-size: 15pt;">
+					<span id="name" style="font-size: 16pt;">Name</span>
+					<span id="full_name" style="color: #999999">(FullName)</span>
+				</span>
+				<div id="graph" style="-moz-user-select: none; margin-top: 10px; width: 150px; height: 150px;"></div>
+				<div style="margin-left: 152px; margin-top: -145px; font-size: 11pt;">
+					<span id="capital_title" style="color: #74481c">Capital:</span>&nbsp;<span id="capital">Capital</span>
+					&nbsp;&nbsp;
+					<span id="population_title" style="color: #74481c">Population:</span>&nbsp;<span id="population">Quantity</span>
+					&nbsp;&nbsp;
+					<span id="government_title" style="color: #74481c">Government:</span>&nbsp;<span id="government">Government</span>
+					<br><br>
+					<span id="description" style="font-size: 12pt;">Description</span>
+				</div>
+				<br>
+				<img src="images/pray_title.png">
+				<br>
+				<div id="pray" style="font-size: 12pt; margin-left: 18px; margin-top: 10px;">
+					Prayer request
+				</div>
+				<br>
+				<span id="sources" style="font-size: 12pt; color: #999999">
+					(Sources)
+				</span>
+			</div>
+		</div>
+		<div id="footer_top_border"></div>
+	</div>
+	<div id="next_bar"></div>
+	<div id="next_pray"></div>
+	<div id="footer">
+		<div id="partner"></div>
+	</div>
+	<div id="tutorial" >
+		<a id="start_tutorial" class="tutorial" href="images/tutorial_bg.jpg" title="
+	 	Welcome to Pray the Silk Road with Release International! You are about to start a 35-day prayer journey along the old Silk Road routes!<br><br>		 
+		Many of the countries that were on the old Silk Road are actually perpetrators of persecution against Christians today, from China through Central Asia, to Azerbaijan and Iran. That’s why we’d like to support these Christian brothers and sisters in prayer today. Please start your journey on Day 1 by clicking on the first balloon icon furthest to the right (in China). You will discover information about the country and how Christians are persecuted there, followed by a prayer request. The following day click on the next day’s icon and so on. Over 35 days you will make your way from China in the East all the way to Egypt. Begin your journey whenever suits you but please try to commit to pray for the whole 35 days. And to help you get a little bit more of a feel for the actual Silk Road journey you may like to walk a mile from east to west as you pray, either on your own or with others. Thanks for taking part and have a great journey!<br><br><br>
+		"></a>
+	 </div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-313828-11']);
+  _gaq.push(['_setDomainName', 'persecutionroad.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
